@@ -3,9 +3,18 @@
 <head>
   <meta charset="utf-8">
   <title>我的个人网站</title>
+  <script>
+    // 在这里设置你的密码，比如把 123456 换成你想要的密码
+    var password = prompt("请输入访问密码：");
+    if (password !== "123456") {
+        alert("密码错误，你无法访问此网页！");
+        // 如果密码错误，就跳转到百度（或者直接把网页变白）
+        window.location.href = "https://www.baidu.com"; 
+    }
+  </script>
 </head>
 <body>
   <h1>你好，欢迎来到我的网站！</h1>
-  <p>这是我刚刚增加的一段内容。</p>
+  <p>这是加密后的内容，只有输入密码正确的人才能看到。</p>
 </body>
 </html>
